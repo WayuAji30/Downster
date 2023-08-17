@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downster</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="py-6 px-32 shadow-sm" id="navbar">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <a href="index.html"><img src="/asset/DownsterLogo.svg" alt="" /></a>
+          <div>
+            <ul class="flex gap-8">
+              <li>
+                <a href="#" class="text-[#191C50] text-[16px] font-medium"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#191C50] opacity-50 text-[16px] font-medium hover:opacity-100"
+                  >Download</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#191C50] opacity-50 text-[16px] font-medium hover:opacity-100"
+                  >Berlangganan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#191C50] opacity-50 text-[16px] font-medium hover:opacity-100"
+                  >Bantuan</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex mr-6">
+              <img src="/asset/bendera.svg" alt="" />
+              <button>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+            </div>
+            <form action="login.html">
+              <button
+                class="border-solid border-2 border-slate-600 rounded-md py-3 px-9 font-bold hover:bg-[#191C50] hover:text-white"
+              >
+                Masuk
+              </button>
+            </form>
+            <form action="register.html">
+              <button
+                class="bg-[#191C50] text-white rounded-md py-3 px-9 font-bold hover:bg-[#0D0F2B]"
+              >
+                Daftar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="px-32 pt-24">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12">
+          <div class="col-span-6">
+            <p class="text-[36px] leading-[42px]">
+              Download Video Dari Berbagai Platform Dengan Kualitas Terbaik
+              Hanya di Downster
+            </p>
+            <p class="text-[16px] mt-5 opacity-70">
+              Tidak hanya dari platform terkenal, Downster membantu kamu untuk
+              <br />
+              mengunduh video dari puluhan platform lainnya. Simpan video
+              terbaik <br />
+              ke perangkatmu hanya dalam hitungan detik
+            </p>
+            <div class="flex gap-4 mt-16">
+              <form action="">
+                <input
+                  type="text"
+                  class="border-solid border-4 border-[#191C50] w-[481px] h-16 pl-4"
+                  placeholder="Tempel tautan video anda disini"
+                />
+              </form>
+              <button class="bg-[#191C50] h-16 w-16">
+                <img src="/asset/download.svg" alt="" class="mx-auto" />
+              </button>
+            </div>
+            <p class="mt-4">
+              Dengan menggunakan layanan kami, anda menerima
+              <span class="font-bold text-[#191C50]"
+                ><a href="#">syarat</a></span
+              >
+              dan
+              <span class="font-bold text-[#191C50]"
+                ><a href="#">kebijakan</a></span
+              >
+              privasi.
+            </p>
+          </div>
+          <div class="col-span-6 mx-auto">
+            <img src="/asset/Home.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform -->
+    <section class="px-32 pt-40">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12">
+          <div class="col-span-12 mx-auto">
+            <p class="text-[28px]">Platform yang kompatibel dengan kami</p>
+          </div>
+
+          <!-- Baris 1 -->
+          <div class="col-span-12 gap-16 flex mx-auto pt-14">
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-9 rounded-lg border-slate-300"
+              >
+                <img src="/asset/logo/youtube.svg" alt="" class="mr-3" />Youtube
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-11 rounded-lg border-slate-300"
+              >
+                <img src="/asset/logo/twitter.svg" alt="" class="mr-3" />Twitter
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-8 rounded-lg border-slate-300"
+              >
+                <img
+                  src="/asset/logo/facebook.svg"
+                  alt=""
+                  class="mr-3"
+                />Facebook
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-8 rounded-lg border-slate-300"
+              >
+                <img
+                  src="/asset/logo/instagram.svg"
+                  alt=""
+                  class="mr-3"
+                />Instagram
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-4 px-10 rounded-lg border-slate-300"
+              >
+                <img src="/asset/logo/threads.svg" alt="" class="mr-3" />Theards
+              </div>
+            </div>
+          </div>
+
+          <!-- Baris 2 -->
+          <div class="col-span-12 gap-16 flex mx-auto pt-6">
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-10 rounded-lg border-slate-300"
+              >
+                <img src="/asset/logo/discord.svg" alt="" class="mr-3" />Discord
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-12 rounded-lg border-slate-300"
+              >
+                <img src="/asset/logo/tiktok.svg" alt="" class="mr-3" />Tiktok
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-9 rounded-lg border-slate-300"
+              >
+                <img
+                  src="/asset/logo/snapchat.svg"
+                  alt=""
+                  class="mr-3"
+                />Snapchat
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-10 rounded-lg border-slate-300"
+              >
+                <img src="/asset/logo/vk.svg" alt="" class="mr-3" />Vk.com
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-11 rounded-lg border-slate-300"
+              >
+                <img src="/asset/logo/reddit.svg" alt="" class="mr-3" />Reddit
+              </div>
+            </div>
+          </div>
+
+          <!-- Baris 3 -->
+          <div class="col-span-12 gap-16 flex mx-auto pt-6">
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-9 rounded-lg border-slate-300"
+              >
+                <img
+                  src="/asset/logo/pinterest.svg"
+                  alt=""
+                  class="mr-3"
+                />Pinterest
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-8 rounded-lg border-slate-300"
+              >
+                <img
+                  src="/asset/logo/telegram.svg"
+                  alt=""
+                  class="mr-3"
+                />Telegram
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 pr-10 pl-9 rounded-lg border-slate-300"
+              >
+                <img src="/asset/logo/behance.svg" alt="" class="mr-3" />Behance
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-6 rounded-lg border-slate-300"
+              >
+                <img
+                  src="/asset/logo/snack-vidio.svg"
+                  alt=""
+                  class="mr-3"
+                />Snack Video
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-4 pr-14 pl-7 rounded-lg border-slate-300"
+              >
+                <img src="/asset/logo/like.svg" alt="" class="mr-3" />Likee
+              </div>
+            </div>
+          </div>
+
+          <!-- Baris 4 -->
+          <div class="col-span-12 gap-16 flex mx-auto pt-6">
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-[22px] px-[25px] rounded-lg border-slate-300"
+              >
+                <img
+                  src="/asset/logo/soundclou.svg"
+                  alt=""
+                  class="mr-3"
+                />Soundcould
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-10 rounded-lg border-slate-300"
+              >
+                <img src="/asset/logo/vimeo.svg" alt="" class="mr-3" />Vimeo
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-6 pl-7 pr-6 rounded-lg border-slate-300"
+              >
+                <img
+                  src="/asset/logo/dailymotion.svg"
+                  alt=""
+                  class="mr-3"
+                />Dailymotion
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-5 px-5 rounded-lg border-slate-300"
+              >
+                <img
+                  src="/asset/logo/odnoklassniki.svg"
+                  alt=""
+                  class="mr-3"
+                />Odnoklassniki
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div
+                class="flex items-center border-solid border-2 py-6 px-10 rounded-lg border-slate-300"
+              >
+                <img
+                  src="/asset/logo/linkedin.svg"
+                  alt=""
+                  class="mr-3"
+                />Linkedln
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ajakan -->
+    <div class="px-32 pt-60">
+      <div class="container">
+        <div class="bg-[#191C50] h-[426px]">
+          <div class="grid grid-cols-12">
+            <div class="col-span-5 mx-auto">
+              <p class="text-[36px] font-bold text-white ml-24 mt-20">
+                Kenapa harus <br />
+                download video di <br />
+                Downster.com?
+              </p>
+              <img src="/asset/orang.svg" alt="" class="-mt-20" />
+            </div>
+            <div class="col-span-7">
+              <div class="flex justify-center ml-56">
+                <div
+                  class="w-[297px] h-[128px] -mt-16 text-white text-[18px] font-semibold"
+                >
+                  <img src="/asset/Ajakan1.svg" alt="" class="absolute" />
+                  <span class="ml-5 my-5 block relative">
+                    Login dengan <br />
+                    google, lancar ga <br />
+                    pake lama</span
+                  >
+                </div>
+              </div>
+              <div class="flex gap-5 mt-5 justify-end">
+                <div
+                  class="w-[297px] h-[128px] text-white text-[18px] font-semibold"
+                >
+                  <img src="/asset/Ajakan2.svg" alt="" class="absolute" />
+                  <span class="ml-5 my-5 block relative"
+                    >Cuma 3 langkah, <br />
+                    unduh gampang <br />
+                    anti ribet.</span
+                  >
+                </div>
+                <div
+                  class="w-[273px] h-[128px] text-white text-[18px] font-semibold"
+                >
+                  <img src="/asset/Ajakan3.png" class="absolute" />
+                  <span class="ml-5 my-5 block relative">
+                    Biaya langganan <br />
+                    super murah, <br />
+                    fitur mewah.
+                  </span>
+                </div>
+              </div>
+              <div class="flex gap-5 mt-5">
+                <div
+                  class="w-[297px] h-[128px] text-white text-[18px] font-semibold"
+                >
+                  <img src="/asset/Ajakan5.svg" alt="" class="absolute" />
+                  <span class="ml-5 my-5 block relative">
+                    Unduh dengan <br />
+                    kecepatan <br />
+                    maksimum.
+                  </span>
+                </div>
+                <div
+                  class="w-[297px] h-[128px] text-white text-[18px] font-semibold"
+                >
+                  <img src="/asset/Ajakan4.svg" alt="" class="absolute" />
+                  <span class="ml-5 my-5 block relative">
+                    Kompatibel <br />
+                    dengan banyak <br />
+                    platform.
+                  </span>
+                </div>
+              </div>
+              <div class="flex gap-5 mt-5 justify-end">
+                <div
+                  class="w-[297px] h-[128px] text-white text-[18px] font-semibold"
+                >
+                  <img src="/asset/Ajakan7.svg" alt="" class="absolute" />
+                  <span class="ml-5 my-5 block relative">
+                    Tidak hanya di <br />
+                    web, tersedia <br />
+                    versi desktop.
+                  </span>
+                </div>
+                <div
+                  class="w-[207px] h-[128px] text-white text-[18px] font-semibold"
+                >
+                  <img src="/asset/Ajakan6.svg" alt="" class="absolute" />
+                  <span class="ml-5 my-5 block relative">
+                    Tampilan <br />
+                    mudah, unduh <br />
+                    tanpa resah
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How to use -->
+    <section class="px-44 pt-60">
+      <div class="container">
+        <div class="grid grid-cols-12">
+          <div class="col-span-12 mx-auto">
+            <p class="font-bold text-[36px] text-center leading-[45px]">
+              Bagaimana cara menggunakan <br />
+              Downster.com?
+            </p>
+            <p class="text-center text-[16px] mt-5 opacity-60">
+              Hanya dengan 3 langkah mudah, video mu akan segera tersimpan
+              <br />
+              dengan mudah ke perangkat hanya dalam hitungan detik.
+            </p>
+          </div>
+          <div class="flex gap-8 mx-auto">
+            <div class="col-span-4">
+              <div
+                class="w-[370px] h-[460px] bg-[#191C50] rounded-[30px] mt-28"
+              >
+                <div class="flex justify-center">
+                  <span
+                    class="relative px-[29px] py-[12px] text-[36px] -mt-12 font-bold bg-white rounded-full border-8 border-solid border-indigo-950"
+                    >1</span
+                  >
+                </div>
+                <div class="justify-center flex mt-7">
+                  <p class="text-white text-[24px] font-bold">
+                    Copy link video
+                  </p>
+                </div>
+                <div class="flex justify-center text-center mt-3">
+                  <p class="text-white text-[14px] font-medium">
+                    Copy link video yang ingin kalian unduh <br />
+                    dari platform yang kalian gunakan.
+                  </p>
+                </div>
+                <div class="flex justify-center mt-[26px]">
+                  <div class="relative">
+                    <img src="/asset/use1.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-4">
+              <div
+                class="w-[370px] h-[460px] bg-[#191C50] rounded-[30px] mt-28"
+              >
+                <div class="flex justify-center">
+                  <span
+                    class="relative px-[29px] py-[12px] text-[36px] -mt-12 font-bold bg-white rounded-full border-8 border-solid border-indigo-950"
+                    >2</span
+                  >
+                </div>
+                <div class="justify-center flex mt-7">
+                  <p class="text-white text-[24px] font-bold">Paste di kolom</p>
+                </div>
+                <div class="flex justify-center text-center mt-3">
+                  <p class="text-white text-[14px] font-medium">
+                    Paste link video yang sudah kalian copy <br />
+                    tadi ke kolom yang sudah disediakan.
+                  </p>
+                </div>
+                <div class="flex justify-center mt-[26px]">
+                  <div class="relative">
+                    <img src="/asset/use2.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-4">
+              <div
+                class="w-[370px] h-[460px] bg-[#191C50] rounded-[30px] mt-28"
+              >
+                <div class="flex justify-center">
+                  <span
+                    class="relative px-[29px] py-[12px] text-[36px] -mt-12 font-bold bg-white rounded-full border-8 border-solid border-indigo-950"
+                    >3</span
+                  >
+                </div>
+                <div class="justify-center flex mt-7">
+                  <p class="text-white text-[24px] font-bold">Unduh video</p>
+                </div>
+                <div class="flex justify-center text-center mt-3">
+                  <p class="text-white text-[14px] font-medium">
+                    Setelah video selesai diproses, pilih <br />
+                    kualitas video, kemudian unduh video
+                  </p>
+                </div>
+                <div class="flex justify-center mt-[26px]">
+                  <div class="relative">
+                    <img src="/asset/use3.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <section class="px-32 pt-36 pb-14">
+        <div class="container mx-auto border-t-2">
+          <div class="grid grid-cols-12 pt-20 items-center">
+            <div class="col-span-5">
+              <img src="/asset/footer/downster.svg" alt="" />
+              <p class="text-[16px] pt-4">Unduh Cepet No Ribet Ribet</p>
+              <div class="flex gap-[26px] pt-[51px]">
+                <img src="/asset/footer/f-instagram.svg" alt="" />
+                <img src="/asset/footer/f-twitter.svg" alt="" />
+                <img src="/asset/footer/f-discord.svg" alt="" />
+                <img src="/asset/footer/f-threads.svg" alt="" />
+              </div>
+              <p class="pt-[59px]">Metode Pembayaran</p>
+              <div class="flex pt-4 gap-3">
+                <img src="/asset/footer/dana.svg" alt="" />
+                <img src="/asset/footer/gopay.svg" alt="" />
+                <img src="/asset/footer/ovo.svg" alt="" />
+                <img src="/asset/footer/spay.svg" alt="" />
+                <img src="/asset/footer/qris.svg" alt="" />
+                <img src="/asset/footer/atmb.svg" alt="" />
+              </div>
+              <p class="pt-14 font-medium">&copy;2023. All rights reserved</p>
+            </div>
+            <div class="col-span-2">
+              <p class="font-semibold">DOWNSTER.COM</p>
+              <div class="pt-4">
+                <p class="pt-3">Tentang</p>
+                <p class="pt-3">Kerjasama</p>
+                <p class="pt-3">Hubungi Kami</p>
+                <p class="pt-3">Masukan</p>
+              </div>
+            </div>
+            <div class="col-span-2">
+              <p class="font-semibold">LAYANAN</p>
+              <div class="pt-4">
+                <p class="pt-3">API</p>
+                <p class="pt-3">Software</p>
+                <p class="pt-3">Webmaster</p>
+                <p class="pt-3">EULA</p>
+              </div>
+            </div>
+            <div class="col-span-2 pb-9">
+              <p class="font-semibold">LAINNYA</p>
+              <div class="pt-4">
+                <p class="pt-3">Syarat dan Ketentuan</p>
+                <p class="pt-3">Kebijakan dan Privasi</p>
+                <p class="pt-3">FAQ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

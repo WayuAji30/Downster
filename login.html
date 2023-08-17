@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+  </head>
+  <body class="overflow-hidden">
+    <!-- Gambar kiri -->
+    <section class="flex">
+      <div class="">
+        <img src="/asset/login/kiri.png" alt="" class="w-[865px]" />
+      </div>
+      <!-- Bagian login -->
+      <div class="px-32 pt-5">
+        <img src="/asset/login/downster-logo.svg" alt="" />
+        <p class="text-[24px] font-semibold pt-10">Masuk ke Downster.com</p>
+        <p class="pt-4">
+          Belum memiliki akun? <a href="register.html" class="text-orange-500">Daftar</a>
+        </p>
+        <div class="pt-9">
+          <button
+            class="flex gap-2 w-full border-2 justify-center py-4 px-[103px] rounded-lg font-medium hover:bg-[#191C50] hover:text-white"
+          >
+            <img src="/asset/login/icon-google.svg" alt="" />Masuk dengan Google
+          </button>
+        </div>
+        <div class="grid grid-cols-3 mt-5 items-center">
+          <hr class="border-slate-300" />
+          <p class="text-center opacity-50">Atau</p>
+          <hr class="border-slate-300" />
+        </div>
+        <div class="pt-7">
+          <form action="index.html">
+            <label for="email" class="font-medium opacity-50"
+              >Alamat email</label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              placeholder=""
+              class="border-2 focus:border-[#191C50] rounded-lg w-full h-14 pl-4 mt-[10px]"
+            />
+            <div class="mt-[22px]"></div>
+            <label for="password" class="font-medium opacity-50">Password</label
+            ><br />
+              <input
+                type="password"
+                id="password"
+                placeholder=""
+                class="border-2 focus:border-[#191C50] rounded-lg w-full h-14 pl-4 mt-[10px]"
+              />
+              <p class="text-end mt-[14px] text-[14px] opacity-50">
+                <a href="">Lupa Password?</a>
+              </p>
+            </div>
+            <button
+              class="w-[412px] h-14 bg-[#191C50] hover:bg-[#0D0F2B] text-white font-semibold rounded-lg mt-12"
+            >
+              Masuk
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
