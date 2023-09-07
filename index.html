@@ -6,15 +6,18 @@
     <title>Downster</title>
     <link rel="shortcut icon" href="/asset/icon.svg" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="py-6 px-32 shadow-sm" id="navbar">
+    <nav class="py-6 px-32 shadow-sm z-10 fixed top-0 bg-white" id="navbar">
       <div class="container mx-auto">
         <div class="flex items-center justify-between">
-          <a href="index.html"><img src="/asset/DownsterLogo.svg" alt="" /></a>
+          <a href="index.html"
+            ><img src="/asset/DownsterLogo.svg" alt="" class="mr-48"
+          /></a>
           <div>
-            <ul class="flex gap-8">
+            <ul class="flex gap-8 mr-36">
               <li>
                 <a href="#" class="text-[#191C50] text-[16px] font-medium"
                   >Beranda</a
@@ -586,6 +589,17 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 0) {
+            // Jika jarak scroll lebih dari 100 pixel dari puncak dokumen
+            $("nav").addClass("fixed-top"); // Tambahkan kelas 'fixed-top' pada elemen nav
+          } else {
+            $("nav").removeClass("fixed-top"); // Hapus kelas 'fixed-top' jika jarak scroll kurang dari 100 pixel dari puncak dokumen
+          }
+        });
+      });
+    </script>
   </body>
 </html>
